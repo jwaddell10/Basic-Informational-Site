@@ -5,13 +5,7 @@ const fs = require("fs");
 http
   .createServer(function (req, res) {
     const myURL = new URL("http://localhost:8080" + req.url);
-    console.log(myURL.pathname, "this is myurlpath");
-    // const pathways = {
-    //   "/": "index.html",
-    //   "/about": "about.html",
-    //   "/contact-me": "contact-me.html",
-    //   'default': '404.html'
-    // };
+    
     let filepath;
     switch (myURL.pathname) {
       case "/":
